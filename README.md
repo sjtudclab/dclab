@@ -10,8 +10,10 @@ dclab@192.168.1.125
 
 passwd: 111111
 
-不要用dclab直接操作，新建自己的用户：adduser username
+不要用dclab直接操作，新建自己的用户：sudo adduser username
 
-添加用户至sudoers：sudo visudo
+添加用户至sudoers：sudo vim /etc/sudoers
 
-User privilege specification下追加username	ALL=(ALL:ALL) ALL 或者用VIM修改/etc/sudoers也可
+User privilege specification下追加username	ALL=(ALL:ALL) ALL (x!保存)
+
+或者使用sudo visudo修改也可
